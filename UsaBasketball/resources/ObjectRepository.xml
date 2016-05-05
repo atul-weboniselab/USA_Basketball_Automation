@@ -1,0 +1,61 @@
+<UsaBasketballAutomation>
+    
+<common>
+  <nextbutton>name=commit</nextbutton>
+  
+</common>
+
+<usabsignup>
+    <proceedbutton>linkText=PROCEED</proceedbutton>
+    <accountinfo>xpath=//h2[contains(.,"Register your account")]</accountinfo>
+    <useremail>id=user_email</useremail>
+    <userpassword>id=user_password</userpassword>
+    <suffix>id=suffix</suffix>
+    <firstname>id=firstName</firstname>
+    <middlename>id=middleName</middlename> 
+    <lastname>id=lastName</lastname>
+    
+    <personalinfo>xpath=//p[contains(.,"Now let’s run through your personal information.")]</personalinfo>
+    <gender>xpath=//label[contains(.,"Male")]</gender>
+    <dob>id=birthDatePicker</dob>
+    <selectyear>xpath=//select[@data-handler="selectYear"]</selectyear>
+    <selectmonth>xpath=//select[@data-handler="selectMonth"]</selectmonth>
+    <selectdate>linkText=2</selectdate>
+    <address>id=address</address>
+    <country>id=country_field_id_chosen</country>
+    <searchcountry>xpath=//div[@class="chosen-search"]//input</searchcountry>
+    <state>id=state_field_id_chosen</state>
+    <searchstate>xpath=//input[@type="text"]</searchstate>
+    <city>id=profile_city_id_chosen</city>
+    <searchcity>xpath=//input[@type="text"]</searchcity>
+    <zipcode>id=postal_code</zipcode>
+    <mobilecode>id=mobile_code</mobilecode>
+    <mobilenumber>id=mobile_number</mobilenumber>
+    <phonecode>id=phone_code</phonecode>
+    <phonenumber>id=phone_number</phonenumber>
+    
+    <coachinginfo>xpath=//p[contains(.,"Let’s get your coaching information.")]</coachinginfo>
+    <organization>id=organization_chosen</organization>
+    <searchorgainzation>xpath=//input[@value="Select Some Options"]</searchorgainzation>
+    <goldcoachlicense>xpath=//label[@for="plan_id_1"]</goldcoachlicense>
+    
+    <payment>xpath=//p[contains(.,"Complete your payment to get started with licensing.")]</payment>
+    <creditcard>linkText=Credit Card</creditcard>
+    <creditemail>id=email_check</creditemail>
+    <cardnumber>id=order_card_number</cardnumber>
+    <cardverification>id=order_cvv</cardverification>
+    <cardexpirymonth>id=exp_month</cardexpirymonth>
+    <cardexpiryyear>id=exp_year</cardexpiryyear>
+    
+    <usbanks>linkText=US Banks</usbanks>
+    <accountholdername>id=account_name</accountholdername>
+    <achemail>id=order_email</achemail>
+    <accounttype>id=order_account_holder_type</accounttype>
+    <accountnumber>id=order_account_number</accountnumber>
+    <routingnumber>id=order_routing_number</routingnumber>
+    
+    <coachdashboard>xpath=//h2[contains(.,'Welcome Coach')]</coachdashboard>
+    
+</usabsignup>
+
+</UsaBasketballAutomation>

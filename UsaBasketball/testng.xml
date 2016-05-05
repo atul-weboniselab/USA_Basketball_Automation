@@ -1,0 +1,63 @@
+
+<suite name="Suite" parallel="none">
+    
+<common>
+    <url>http://usab-testing.weboapps.com/</url>
+</common>
+    
+<usabsignup>
+   <datasets>
+      <dataset>
+          <accountinfo>REGISTER YOUR ACCOUNT</accountinfo>
+          <userpassword>password1234</userpassword>
+    	  <suffix>Mr</suffix>
+          <firstname>Atul</firstname>
+          <middlename>Shashi</middlename> 
+          <lastname>Kumar</lastname>
+          
+          <personalinfo>Now let’s run through your personal information.</personalinfo>
+          <selectyear>1991</selectyear>
+          <selectmonth>Jan</selectmonth>
+          <address>B1-504, Montvert Pristine, Aundh Road, Pune, 411020.</address>
+          <searchcountry>United States</searchcountry>
+          <searchstate>Alaska</searchstate>
+          <searchcity>Adak</searchcity>
+          <zipcode>41020</zipcode>
+          <mobilecode>+1</mobilecode>
+          <mobilenumber>9890546018</mobilenumber>
+          <phonecode>4990</phonecode>
+          <phonenumber>25806068</phonenumber>
+          
+          <coachinginfo>Let’s get your coaching information.</coachinginfo>
+          <searchorganization>test1</searchorganization>
+          
+          <payment>Complete your payment to get started with licensing.</payment>
+          <creditcard>Credit Card</creditcard>
+          <cardnumber>4111111111111111</cardnumber>
+          <cardverification>123</cardverification>
+          <cardexpirymonth>10</cardexpirymonth>
+          <cardexpiryyear>2020</cardexpiryyear>
+          
+          <achpayment>ACH payments</achpayment>
+          <accountholdername>Atul Sasikumar</accountholdername>
+          <accounttype>company</accounttype>
+          <accountnumber>1234567890</accountnumber>
+          <routingnumber>0987654321</routingnumber>
+          
+          <coachdashboard>Welcome Coach</coachdashboard>
+                      
+      </dataset>
+   </datasets>
+</usabsignup>
+   
+
+<test name="Test">
+   <classes>
+      <class name="UsaBasketballAutomation">
+          <methods>
+         	  <include name="usabsignup" />
+          </methods>
+      </class>
+   </classes>
+</test> <!-- Test -->
+</suite> <!-- Suite -->
